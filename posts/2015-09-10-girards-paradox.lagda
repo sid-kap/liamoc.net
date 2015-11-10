@@ -44,7 +44,7 @@ due to @VonNeumann, but commonly attributed to John von Neumann.
 This stratification bears remarkable similarity to Russell's theory of _types_ (see @Russell), his own solution to the the paradoxical set $\Delta$,
 and the distant ancestor of modern type theory.
 
-Indeed, in the intuitionistic type theory of @MartinLof, the approximate foundation of the Agda proof assistant, we have a heirarchy of types
+Indeed, in the intuitionistic type theory of @MartinLof, the approximate foundation of the Agda proof assistant, we have a hierarchy of types
 that very much resembles that of von Neumann or Zermelo[^4]:
 
 $$ \mathsf{Set} : \mathsf{Set}_1 : \mathsf{Set}_2 : \mathsf{Set}_3 : \dots $$
@@ -82,7 +82,7 @@ notion of sets as comprehensions, and using this to derive a contradiction.
 
 ## Russell's Paradox in Agda
 
-For these (interactive) Agda snippets, I have enabled `--type-in-type`, which removes the predicative heirarchy from the type theory, instead stating
+For these (interactive) Agda snippets, I have enabled `--type-in-type`, which removes the predicative hierarchy from the type theory, instead stating
 that $\mathsf{Set} : \mathsf{Set}$.
 
 \begin{code}
@@ -169,7 +169,7 @@ falso = Δ∉Δ (x∉x→x∈Δ Δ∉Δ)
 ## Musings and Speculation
 
 I find it very curious that two very different approaches to formalising mathematics end up with much the same stratified character, and for
-different reasons. Perhaps this Russell-style heirarchy is, kind of like the Church-Turing thesis,
+different reasons. Perhaps this Russell-style hierarchy is, kind of like the Church-Turing thesis,
 a fundamental characteristic of any sufficiently expressive foundation. Something _discovered_ rather than _invented_. In the words of @DanaScott:
 
 > The truth is that there is only one satisfactory way of avoiding the paradoxes: namely, the use of some form of the _theory of types_.
